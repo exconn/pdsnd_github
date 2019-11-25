@@ -10,7 +10,8 @@ program from a major city.
 
 User Input:
 The user will request a specific city to analyze the bike sharing program 
-in that city. 
+in that city. Currently, we only have 3 cities available: Chicago, New York
+City and Washington.
 
 The user will enter the month and if desired, the day of the week to analyze
 for the selected city. 
