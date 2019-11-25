@@ -1,6 +1,8 @@
 import time
 import pandas as pd
 
+# There is a copy of the repo on GitHub now.
+
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
               'washington': 'washington.csv' }
