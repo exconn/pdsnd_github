@@ -21,6 +21,8 @@ The report will display descriptive statistics using the data obtained for
 that city. The program will display data such as: most frequent trips, average 
 time for trips, and user information for the trips.   
 
+Users can view the raw data of the original file for each city. Users by 
+default can see top lines and bottom lines of teh original file. 
 
 ### Files used
 The executable file is: bikeshare_v2.py. 
