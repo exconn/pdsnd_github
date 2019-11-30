@@ -32,6 +32,8 @@ The data files are:
 chicago.csv
 new_your_city.csv
 washington.csv
+seattle.csv (copy of chicago.csv)
+phoenix.csv (copy of chicago.csv)
 
 ### Credits
 Udacity Mentor and Technical Advisor: Shyuan
