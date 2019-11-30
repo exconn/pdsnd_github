@@ -22,7 +22,7 @@ def get_filters():
     """
     
     print('Hello! Let\'s explore some US bikeshare data from ajor cities!')
-    
+     
     # TO DO: get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
     city_list = list(CITY_DATA.keys())
     while True:
@@ -30,7 +30,8 @@ def get_filters():
         if city in city_list:
             break
         print("Oppss..please enter a valid city!")
-        
+   
+    
     # TO DO: get user input for month (all, january, february, ... , june)
     month_list = ["january", "february", "march", "april", "may", "june", "all"]
     while True:
@@ -269,16 +270,16 @@ def user_stats(df):
 def raw_data(df):
     answer_list = ["yes", "y"]
     while True:
-        answer = input("Would you like to review the first 5 and last 5 lines of raw data for your selected city (type 'yes' or 'no'): ")
+        answer = input("Would you like to review the first 10 and last 10 lines of raw data for your selected city (type 'yes' or 'no'): ")
         if answer in answer_list:
             print()
-            print("Here are the first 5 lines of raw data for your selected city.")
-            print(df.head(5))
+            print("Here are the first 10 lines of raw data for your selected city.")
+            print(df.head(10))
             print()
-            print("Here are the last 5 lines of raw data for your selected city.")
-            print(df.tail(5))
+            print("Here are the last 10 lines of raw data for your selected city.")
+            print(df.tail(10))
             print()
-            idx = 5
+            idx = 10
             while True:
                 more_raw_more = input("Would like to see more raw data? ")
                 if more_raw_more in answer_list:
