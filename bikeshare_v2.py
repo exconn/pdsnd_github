@@ -5,7 +5,10 @@ import pandas as pd
 
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
-              'washington': 'washington.csv' }
+              'washington': 'washington.csv',
+              'seattle': 'seattle.csv',
+              'phoenix': 'phoenix.csv'
+              }
 
 def get_filters():
     """
@@ -23,7 +26,7 @@ def get_filters():
     # TO DO: get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
     city_list = list(CITY_DATA.keys())
     while True:
-        city = input("What city would you like to analyze (Chicago, New York City, and Washington): ").lower()
+        city = input("What city would you like to analyze (Chicago, New York City, Washington, Seattle, or Phoenix): ").lower()
         if city in city_list:
             break
         print("Oppss..please enter a valid city!")
